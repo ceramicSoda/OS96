@@ -1,4 +1,4 @@
-@import url("colors.css");
+@import url("colors_purple.css");
 @import url("headerbar.css");
 @import url("buttons.css");
 @import url("entries.css");
@@ -12,7 +12,10 @@
 @import url("treeview.css");
 @import url("text.css");
 
-*{image-rendering: pixelated;}
+*{
+	image-rendering: pixelated;
+	caret-color: @text_fg;
+}
 selection{background-color: @sel_bg;}
 label{color: @text_fg;}
 label:disabled{color: @text_dis;}
