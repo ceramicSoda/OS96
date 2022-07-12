@@ -1,0 +1,133 @@
+button{
+	transition: 60ms ease-in-out;
+	color: @main_fg;
+	background-color: @main_bg;
+	box-shadow: inset -2px -2px @main_shade, inset 1px 1px @main_lit;
+	padding: 4px;
+	border: 1px solid @main_outline;
+}
+button:active, button.flat:active{
+	background-color: @main_shade2;
+	box-shadow: inset -1px -1px @main_lit, inset 2px 2px @main_shade;
+}
+button:checked, button.flat:checked{
+	box-shadow: none;
+	background-color: @main_shade2;
+	box-shadow: inset -2px -2px @main_bg, inset 1px 1px @main_lit;	
+}
+button:hover{
+	transition: 200ms ease-in-out;
+	border: 1px solid @sel_shade;
+}
+button:disabled, spinbutton button:disabled{
+	transition: 60ms ease-in-out;
+	color: @text_dis;
+	background-color: @main_bg;
+	box-shadow: inset -2px -2px @main_shade, inset 1px 1px @main_lit;
+	padding: 4px;
+	border: 1px solid @main_outline;
+}
+button:checked:disabled, spinbutton button:checked:disabled{
+	box-shadow: inset -1px -1px @main_lit, inset 1px 1px @main_shade2;
+}
+
+button.circular{border-radius: 50%;}
+button.flat{
+	border: 1px solid rgba(0,0,0,0);
+	background: none;
+	box-shadow: none;
+	margin: 2px;
+	border-radius: 3px;
+}
+button.flat:hover{border: 1px solid @main_outline;}
+button.flat:disabled{opacity: 0.5;border-color: @text_dis;}
+/*--------------RED_BUTTON--------------*/
+button.destructive-action label{
+	color: white;
+}
+button.destructive-action{
+	border: 1px solid @main_outline;
+	background-color: @red_button;
+	color: white;
+	box-shadow: inset -2px -2px 0 shade(@red_button, 0.6),inset 1px 1px 0 shade(@red_button, 1.4);
+}
+button.destructive-action:checked, button.destructive-action:active{
+	background-color: @red_button;
+	box-shadow: inset 2px 2px 0 shade(@red_button, 0.6),inset -1px -1px 0 shade(@red_button, 1.4);
+}
+button.destructive-action:hover{text-shadow: 1px 1px 1px shade(@red_button, 0.6);}
+/*--------------RADIO-------------------*/
+radiobutton>radio{
+	border-radius: 16px;
+	margin: 1px 2px; 
+	border: 1px solid @main_outline;
+	box-shadow: -1px -1px 0 @main_shade,inset 2px 2px 0 @main_shade,1px 1px 0 @main_lit;
+	background: @text_bg;
+	color: @main_fg;
+}
+radiobutton:disabled>radio{color: @text_dis;}
+/*------------CHECKBOX-----------------*/
+checkbutton>check{
+	border-radius: 3px;
+	margin: 1px 2px; 
+	border: 1px solid @main_outline;
+	box-shadow: -1px -1px 0 @main_shade,
+				inset 2px 2px 0 @main_shade,
+  				1px 1px 0 @main_lit;
+	background: @text_bg;
+	color: @main_fg;
+}
+checkbutton:disabled>check{color: @text_dis;}
+/*------------SPECIFIC------------------*/
+modelbutton{
+	padding: 4px;
+	color: @text_fg;
+}
+modelbutton:hover{background-color: @main_shade2;}
+modelbutton:checked{background-color: @main_shade2;}
+modelbutton:active{background-color: @sel_bg;}
+button.color>colorswatch>overlay{
+  box-shadow: inset 2px 2px 0 @main_shade,
+              inset -1px -1px 0 @main_lit;
+}
+button.link{
+	border: 1px dashed @main_outline;
+	box-shadow: none; 
+}
+button.link>label{color: @text_link;}
+
+arrow{
+	min-width: 8px;
+	min-height: 8px;
+	background-image: url("assets/arrow_bottom.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	color: @text_fg;
+	margin: 2px;
+}
+
+treeview>header>button{
+	border-radius: 0; 
+	box-shadow: inset -1px -1px 0 @main_shade2,inset 1px 1px 0 @main_lit;
+	border-right-color: @main_shade2;
+}
+treeview>header>button:first-child{border-radius: 3px 0 0 0;}
+treeview>header>button:last-child{border-radius: 0 3px 0 0; border-right-color: @main_outline;}
+scrollbar button{ 
+	border-radius: 0;
+	border: none;
+}
+colorswatch{
+	border-radius: 3px;
+	border: 1px solid @main_outline;
+	box-shadow: inset -2px 0 0 @main_shade,
+				inset 1px 1px 0 @main_lit;
+}
+scrollbar button:disabled, scrollbar button:active, scrollbar button:hover{border: none}
+/*------------CORNERS------------*/
+stackswitcher>button:first-child{
+	border-radius: 3px 0 0 3px;
+}
+stackswitcher>button:last-child{
+	border-radius: 0 3px 3px 0;
+}

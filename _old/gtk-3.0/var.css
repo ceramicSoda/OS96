@@ -1,0 +1,27 @@
+/* OS96 MODULE */
+/* this file contains entire theme palette. Fill free to change everything */
+
+/*--------- COLORS ----------------------*/
+
+/*--------- tweak for windows opacity ---*/
+@define-color overall_bg 	#ffffff20;  
+/*--------- main theme color ------------*/
+@define-color main_fg 		#202020;
+@define-color main_bg 		#dadada;
+/*--------- bevel shadow and light ------*/
+@define-color main_lit		#efefef;
+@define-color main_shade	#aaaada;
+/*--------- text fields, menus, etc. ----*/
+@define-color text_bg 		#fafafa;
+@define-color text_fg 		#202020;
+@define-color text_dis 		#bbbbbb;
+/*--------- selection & progress bar ----*/
+@define-color sel_lit 		#a8a8f8;
+@define-color sel_bg 		#8888d8;
+@define-color sel_shade		#6666a6;
+@define-color sel_fg	 	#ffffff;
+/*--------- tooltips --------------------*/
+@define-color ttip_bg		#FFFFBF;
+@define-color ttip_fg		#000000;
+
+/*---------- MISC ----------------------*/

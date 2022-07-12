@@ -1,0 +1,35 @@
+@import url("var.css");
+@import url("buttons.css");
+@import url("menus.css");
+@import url("main.css");
+
+* {	
+	-GtkScrollbar-has-backward-stepper: true;
+	-GtkScrollbar-has-forward-stepper: true;
+	-GtkScrollbar-has-secondary-backward-stepper: false;
+	-GtkScrollbar-has-secondary-forward-stepper: false;
+	-GtkScrolledwindow-scrollbar-spacing: 0;
+	-GtkScrolledwindow-scrollbars-within-bevel: 1;
+	-GtkTextView-error-underline-color: #CC0000;
+	-GtkToolbutton-icon-spacing: 6;
+	-GtkToolItemGroup-expander-size: 11;
+	-GtkWidget-text-handle-width: 20;
+	-GtkWidget-text-handle-height: 20;
+	-GtkDialog-button-spacing: 4;
+	-GtkDialog-action-area-border: 0;
+	-GtkTreeview-expander-size: 8;
+	background-clip: padding-box;
+	outline-width: 1px;
+	outline-offset: -3px;
+	outline-style: dashed;
+	outline-color: #000000;
+	-gtk-outline-radius: 0; 	
+}
+
+.background{
+	color: @main.fg; 
+	background-color: @overall_bg;
+}
+
+*:disabled {-gtk-icon-effect: dim; }
+*:hover {-gtk-icon-effect: highlight; }

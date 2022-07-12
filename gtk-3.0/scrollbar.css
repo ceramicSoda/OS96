@@ -1,0 +1,47 @@
+scrollbar{
+	background-color: @main_shade2;
+	background-size: 2px 2px;
+	background-image: repeating-linear-gradient(45deg, @main_shade2 0, @main_shade2 1px, @main_bg 0, @main_bg 50%);
+	border: 1px solid @main_outline;
+}
+scrollbar trough{
+
+}
+scrollbar slider{
+	background-color: @sel_bg;
+	min-width: 12px;
+	box-shadow: inset -1px -1px 0 @sel_shade,
+				inset 1px 1px 0 @sel_lit;
+	border: 1px solid @main_outline;
+	background-size: 8px;
+	background-position: center;
+	background-repeat: no-repeat;
+	box-sizing: content-box;
+}
+scrollbar button{
+	min-height: 8px;
+	min-width: 8px;
+	color: transparent;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+scrollbar button:disabled{
+	color: transparent;
+}
+scrollbar.vertical slider{background-image: url("assets/slider_vertical.png");}
+scrollbar.horizontal slider{
+	min-height: 12px;
+	background-image: url("assets/slider_horizontal.png");
+}
+scrollbar.right.vertical{border-radius: 0 3px 3px 0;}
+scrollbar.left.vertical{border-radius: 3px 0 0 3px;}
+
+scrollbar.vertical button.up{background-image: url("assets/arrow_up.png");}
+scrollbar.vertical button.down{background-image: url("assets/arrow_bottom.png");}
+scrollbar.horizontal.bottom button.up, scrollbar.horizontal.top button.down{background-image: url("assets/arrow_left.png");}
+scrollbar.horizontal.bottom button.down, scrollbar.horizontal.top button.up{background-image: url("assets/arrow_right.png");}
+
+scrollbar.vertical button.up:disabled{background-image: url("assets/arrow_up_disabled.png");}
+scrollbar.vertical button.down:disabled{background-image: url("assets/arrow_bottom_disabled.png");}
+scrollbar.horizontal.bottom button.up:disabled, scrollbar.horizontal.top button.down:disabled{background-image: url("assets/arrow_left_disabled.png");}
+scrollbar.horizontal.bottom button.down:disabled, scrollbar.horizontal.top button.up:disabled{background-image: url("assets/arrow_right_disabled.png");}

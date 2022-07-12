@@ -1,0 +1,44 @@
+menubar{
+  background-color: @main_bg;
+	border-bottom: 1px solid @main_outline;
+}
+menubar>menuitem{
+	padding: 4px 8px;
+}
+menubar>menuitem:hover{
+	background-color: @main_shade2;
+}
+menu{
+	border: 1px solid @main_outline;
+}
+menu menuitem, .menu menuitem {
+  min-height: 16px;
+  min-width: 40px;
+  padding: 4px 12px;
+  color: @text_fg;
+  background-color: @main_bg; 
+  border-bottom: 1px solid @main_shade2;
+}
+menu menuitem:hover, .menu menuitem:hover {
+  color: @sel_fg;
+  background-color: @sel_bg; 
+  border-bottom: 1px solid @sel_lit;
+}
+menu menuitem:hover switch slider, menu menuitem:hover scale highlight, menu menuitem:hover scale slider, .menu menuitem:hover switch slider, .menu menuitem:hover scale highlight, .menu menuitem:hover scale slider {
+  background-color: @main_bg; 
+}
+menu menuitem:disabled, .menu menuitem:disabled {
+  color: @text_dis; 
+}
+menu menuitem arrow, .menu menuitem arrow {
+  min-width: 16px;
+  min-height: 16px; 
+}
+menu menuitem arrow:dir(ltr), .menu menuitem arrow:dir(ltr) {
+  margin-left: 10px;
+  -gtk-icon-source: -gtk-icontheme("pan-end-symbolic"); 
+}
+menu menuitem arrow:dir(rtl), .menu menuitem arrow:dir(rtl) {
+  margin-right: 10px;
+  -gtk-icon-source: -gtk-icontheme("pan-end-symbolic-rtl"); 
+}

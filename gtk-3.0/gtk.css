@@ -1,0 +1,55 @@
+@import url("colors.css");
+@import url("headerbar.css");
+@import url("buttons.css");
+@import url("entries.css");
+@import url("frames.css");
+@import url("menus.css");
+@import url("progress_levelbar.css");
+@import url("scale.css");
+@import url("scrollbar.css");
+@import url("switch.css");
+@import url("separator.css");
+@import url("treeview.css");
+@import url("text.css");
+
+*{image-rendering: pixelated;}
+selection{background-color: @sel_bg;}
+label{color: @text_fg;}
+label:disabled{color: @text_dis;}
+actionbar{padding: 4px;}
+toolbar{
+	background-color: @main_bg;
+	padding: 2px;
+}
+.link{color:@sel_bg;}
+window.background{background-color: @overall_bg;}
+.background.solid-csd{background-color: @main_bg;}
+
+window.solid-csd{
+	border-top: 1px solid @main_lit;
+	border-left: 1px solid @main_lit;
+	border-right: 1px solid @main_shade;
+	border-bottom: 1px solid @main_shade;
+}
+window.solid-csd scrolledwindow.frame{background-color: @text_bg; }
+decoration{
+	margin: 2px;
+	background-color: @main_outline;
+}
+iconview:selected, iconview:selected:focus, iconview text:selected, iconview text selection, iconview text:selected:focus, iconview text selection:focus {
+  color: @text_fg;
+  background-color: @sel_lit;
+  box-shadow: inset 2px 2px @sel_shade, inset -1px -1px @sel_bg;
+  border: 1px solid @main_outline;
+  border-radius: 3px;
+}
+popover{
+	background-color: @main_bg	;
+	border-radius: 3px;
+	border: 1px solid @main_outline;
+	box-shadow: inset -2px -2px 0 @main_shade, inset 1px 0 0 @main_lit;
+}
+dialog{
+	border: 1px solid @main_outline;
+	background-color: @main_bg;
+}

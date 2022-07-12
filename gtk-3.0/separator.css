@@ -1,0 +1,44 @@
+separator{	
+	background: none;
+	background-color: @main_shade;
+	outline-width: 1px;
+	outline-offset: -3px;
+	outline: solid @main_shade; 
+}
+separator.vertical{
+	border-right: 1px solid @main_lit;
+	border-left: 1px solid @main_shade;
+}
+separator.horizontal{
+	border-bottom: 1px solid @main_lit;
+	border-top: 1px solid @main_shade;
+}
+separator.wide{
+	outline-width: 1px;
+	outline-offset: -3px;
+	outline: solid @main_shade; 
+	display: none;
+}
+paned > separator { 
+	min-width: 1px; 
+	min-height: 1px; 
+	-gtk-icon-source: none; 
+	border-style: none; 
+	background-color: transparent; 
+	background-image: image(@main_outline); 
+	background-size: 1px 1px; 
+}
+paned > separator:selected { background-image: image(@sel_bg); }
+paned > separator:backdrop { background-image: image(@main_outline) }
+paned > separator.wide { 
+	min-width: 2px; 
+	min-height: 2px; 
+	background-color: @main_outline; 
+	background-image: image(@main_outline), 
+	image(@main_outline); 
+	background-size: 1px 1px, 1px 1px; 
+}
+paned > separator.wide:backdrop { 
+	background-color: @main_outline; 
+	background-image: image(@main_outline), image(@main_outline); 
+}

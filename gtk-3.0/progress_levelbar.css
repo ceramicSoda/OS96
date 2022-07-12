@@ -1,0 +1,57 @@
+/*------------------- progressbar -------------------*/
+progressbar>text{color: @text_fg;}
+progressbar>trough{
+	border-radius: 4px;
+	background-color: @main_shade22; 
+	background-size: 3px 3px;
+	background-image: repeating-linear-gradient(45deg, @main_shade 0, @main_shade 1px, @main_bg 0, @main_bg 50%);
+	box-shadow: -2px -2px 0 @main_shade, 1px 1px 0 @main_lit, inset 2px 2px @main_shade;
+  	border: 1px solid @main_outline;
+	padding: 1px;
+	margin: 2px; 
+}
+progressbar>trough>progress{
+	background-color: @sel_bg;
+	border-radius: 3px;
+	/*box-shadow: inset 2px 2px 0 @sel_shade, inset -1px -1px 0 @sel_shade, 2px 1px 0 @main_shade; */
+}
+progressbar.vertical>trough>progress{background-color: @sel_bg;}
+progressbar.horizontal trough, progressbar.horizontal progress{min-height: 12px;}
+progressbar.vertical trough, progressbar.vertical progress{min-width: 12px;}
+
+/*-------------------- level bar --------------------*/
+levelbar>trough{
+	border-radius: 8px;
+	border: 1px solid @main_shade2;
+	background-color: @main_bg;
+	min-height: 6px;
+	min-width: 6px;
+	padding: 1px;
+}
+levelbar block{
+	min-height: 2px;
+	min-width: 2px;
+	padding: 2px;
+	border-radius: 4px;
+	box-shadow: -1px -1px 0 @main_shade,
+				inset 2px 2px 0 @main_shade,
+  				1px 1px 0 @main_lit;
+  	border: 1px solid @main_outline;
+  	margin: 2px;
+}
+levelbar.continuous.horizontal>trough>block.high, levelbar.continuous.horizontal>trough>block.low{
+	border-radius: 4px 0 0 4px;
+}
+levelbar>trough>block.high{
+	background-color: @level_high;
+	box-shadow: -1px -1px 0 @main_shade,
+				inset 1px 2px 0 shade(@level_high, 0.7),
+  				0px 0px 0 @main_lit;
+}
+levelbar>trough>block.low{
+	background-color: @level_low;
+	box-shadow: -1px -1px 0 @main_shade,
+				inset 1px 2px 0 shade(@level_low, 0.7),
+  				0px 0px 0 @main_lit;	
+}
+levelbar>trough>block.empty{background: none;}

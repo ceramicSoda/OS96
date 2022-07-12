@@ -1,0 +1,27 @@
+toolbar {
+  padding: 4px;
+  border: none;
+  border-bottom: 1px solid @main_shade;
+  color: @main_fg;
+  background-color: @main_bg; 
+  box-shadow: 	inset -1px -1px 0 @main_shade,
+				inset 1px 1px 0 @main_lit,
+				1px 1px 0 @main_bg;
+}
+label{
+	background-color: @text_bg; 
+	color: @text_fg;
+	padding: 4px; 
+	border-radius: 4px;
+	border: 1px inset @text_bg; 
+}
+
+.path-bar, headerbar, textview, treeview {
+	padding: 4px;
+	background-color: @text_bg;
+	color: @text_fg;
+
+}
+.view{
+	padding: 4px;
+}

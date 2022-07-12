@@ -1,0 +1,25 @@
+entry{
+	border-radius: 2px;
+  	border: 1px solid @main_outline;
+	padding: 4px;
+	background-color: @text_bg; 
+	color: @text_fg; 
+}
+entry progress{
+	margin: -2px;
+	border-bottom: 2px solid @sel_bg;
+}
+entry:first-child{border-radius: 2px 0 0 2px;}
+entry:last-child{border-radius: 0 2px 2px 0;}
+spinbutton{
+	color:@text_fg;
+}
+spinbutton>entry{
+	min-width: 24px;
+	border-radius: 0;
+	color: @text_fg;
+	background-color: @text_bg;
+}
+spinbutton:disabled{
+	color: @text_dis;
+}

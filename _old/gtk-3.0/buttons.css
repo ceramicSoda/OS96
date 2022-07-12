@@ -1,0 +1,45 @@
+button {
+	border: 1px solid @sel_shade;
+  	background-color: @main_bg;
+  	color: @main_fg; 
+  	border-radius: 2px;
+  	box-shadow: inset -1px -1px 0 @main_shade,
+  				inset 1px 1px 0 @main_lit,
+  				1px 1px 0 @main_bg;
+}
+button:checked, button:active{
+	box-shadow: inset 1px 1px 0 @main_shade,
+  				inset -1px -1px 0 @main_lit,
+  				1px 1px 0 @main_bg;	
+}
+
+button.text-button, button.image-button {
+	transition: 200ms ease-in-out; 
+  	padding: 6px 8px;
+  	margin: 2px;
+  	background-color: @main_bg;
+  	color: @main_fg; 
+	box-shadow: none;
+}
+button.text-button:hover, button.image-button:hover{
+	box-shadow: inset -2px -2px 0 @main_shade,
+				inset -1px -1px 0 @main_bg,
+  				inset 2px 2px 0 @main_lit,
+  				2px 2px 0 @main_bg;
+}
+button.text-button:checked, button.image-button:checked, button.text-button:active, button.image-button:active {
+	box-shadow: inset 2px 2px 0 @main_shade,
+  				inset -2px -2px 0 @main_lit,
+  				inset 1px 1px 0 @main_bg,
+  				2px 2px 0 @main_bg;
+}
+
+button:first-child{
+	border-radius: 6px 0 0 6px; 
+}
+button:last-child{
+	border-radius: 0 6px 6px 0; 
+}
+button:only-child{
+	border-radius: 6px; 
+}
