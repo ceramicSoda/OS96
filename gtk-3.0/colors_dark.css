@@ -9,16 +9,16 @@
 @define-color overall_bg 	#ffffff;  
 @define-color main_outline 	#576069;  
 /*--------- main theme color ------------*/
-@define-color main_fg 		#202020;
-@define-color main_bg 		#cacaca;
+@define-color main_fg 		#b9c6b2;
+@define-color main_bg 		#576069;
 /*--------- bevel shadow and light ------*/
-@define-color main_lit		#efefef;
+@define-color main_lit		#788a87;
 /*@define-color main_shade	#9292b2; */
-@define-color main_shade	#9292a2;
-@define-color main_shade2	#b8b8b8;
+@define-color main_shade	#443846;
+@define-color main_shade2	#47595f;
 /*--------- text fields, menus, etc. ----*/
-@define-color text_bg 		#202020;
-@define-color text_fg 		#fafafa;
+@define-color text_bg 		#2e222f;
+@define-color text_fg 		#b9c6b2;
 @define-color text_dis 		#788a87; 
 @define-color text_link		#1D72E9;
 /*--------- selection & progress bar ----*/

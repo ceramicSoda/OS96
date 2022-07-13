@@ -21,4 +21,5 @@ list row{
 list row:selected, list row:selected:hover, list row:selected:focus {
 	background-color: @sel_lit;
 	text-shadow: 1px 1px 0 @sel_bg;
+	color: @text_bg;
 }

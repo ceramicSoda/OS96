@@ -68,5 +68,5 @@ calendar.header{
 }
 calendar.button{background: none; color: @text_fg;}
 calendar.button:hover{color: @sel_shade;}
-calendar:selected{background-color: @sel_lit;}
+calendar:selected{background-color: @sel_lit;color: @text_bg;}
 calendar.highlight{background-color: @sel_lit;}
