@@ -6,6 +6,9 @@ button{
 	padding: 4px;
 	border: 1px solid @main_outline;
 }
+button>image{
+	padding: 2px;
+}
 button:active, button.flat:active{
 	background-color: @main_shade2;
 	box-shadow: inset -1px -1px @main_lit, inset 2px 2px @main_shade;
@@ -13,7 +16,7 @@ button:active, button.flat:active{
 button:checked, button.flat:checked{
 	box-shadow: none;
 	background-color: @main_shade2;
-	box-shadow: inset -2px -2px @main_bg, inset 1px 1px @main_lit;	
+	box-shadow: inset 1px 1px @main_shade;	
 }
 button:hover{
 	transition: 200ms ease-in-out;

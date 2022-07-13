@@ -4,8 +4,10 @@ treeview{
 	border-radius: 2px;
 	color: @text_fg;	
 }
-treeview.view:selected, treeview.view:selected:focus{
+treeview.view{
 	border-radius: 0;
+}
+treeview.view:selected, treeview.view:selected:focus{
 	color: @text_fg;
 	text-shadow: 1px 1px 0 @sel_bg;
 	background-color: @sel_lit;

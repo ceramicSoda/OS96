@@ -2,6 +2,7 @@
 @import url("headerbar.css");
 @import url("buttons.css");
 @import url("entries.css");
+@import url("modals.css");
 @import url("frames.css");
 @import url("menus.css");
 @import url("progress_levelbar.css");
@@ -16,7 +17,7 @@
 	image-rendering: pixelated;
 	caret-color: @text_fg;
 }
-selection{background-color: @sel_bg;}
+selection{background-color: @sel_lit;}
 label{color: @text_fg;}
 label:disabled{color: @text_dis;}
 actionbar{padding: 4px;}
@@ -51,8 +52,4 @@ popover{
 	border-radius: 3px;
 	border: 1px solid @main_outline;
 	box-shadow: inset -2px -2px 0 @main_shade, inset 1px 0 0 @main_lit;
-}
-dialog{
-	border: 1px solid @main_outline;
-	background-color: @main_bg;
 }
