@@ -4,3 +4,20 @@ treeview{
 	border-radius: 2px;
 	color: @text_fg;	
 }
+treeview.view.trough:selected, treeview.view.trough:selected:focus {
+    color: @text_fg;
+    background-color: @sel_shade;
+    border-radius: 0;
+    border: none; 
+}
+treeview.view.progressbar:focus, treeview.view.progressbar:selected:focus, treeview.view.progressbar:focus:selected, treeview.view.progressbar:focus:selected:focus, treeview.view.progressbar:disabled:selected {
+  border-radius: 0;
+  color: @sel_shade;
+  background-color: @text_fg; 
+}
+treeview.view:selected, treeview.view:selected:focus{
+	border-radius: 0;
+	color: @text_fg;
+	text-shadow: none;
+	background-color: @sel_lit;
+}

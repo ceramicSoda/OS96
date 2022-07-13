@@ -13,9 +13,13 @@ progressbar>trough{
 progressbar>trough>progress{
 	background-color: @sel_bg;
 	border-radius: 3px;
+	box-shadow: -1px -1px 0 @sel_shade, 1px 1px 0 @sel_lit, inset 2px 2px @sel_shade;
 	/*box-shadow: inset 2px 2px 0 @sel_shade, inset -1px -1px 0 @sel_shade, 2px 1px 0 @main_shade; */
 }
-progressbar.vertical>trough>progress{background-color: @sel_bg;}
+progressbar.vertical>trough>progress{
+	background-color: @sel_bg;
+	box-shadow: -1px -1px 0 @sel_shade, 1px 1px 0 @sel_lit, inset 2px 2px @sel_shade;
+}
 progressbar.horizontal trough, progressbar.horizontal progress{min-height: 12px;}
 progressbar.vertical trough, progressbar.vertical progress{min-width: 12px;}
 
