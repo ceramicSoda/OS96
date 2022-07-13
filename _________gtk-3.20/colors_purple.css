@@ -7,28 +7,24 @@
 @define-color red_button	#cd6060;
 /*--------- tweak for windows opacity ---*/
 @define-color overall_bg 	#ffffff;  
-@define-color main_outline 	#576069;  
+@define-color main_outline 	#606060;  
 /*--------- main theme color ------------*/
 @define-color main_fg 		#202020;
 @define-color main_bg 		#cacaca;
 /*--------- bevel shadow and light ------*/
 @define-color main_lit		#efefef;
-/*@define-color main_shade	#9292b2; */
-@define-color main_shade	#9292a2;
+@define-color main_shade	#9292b2;
 @define-color main_shade2	#b8b8b8;
 /*--------- text fields, menus, etc. ----*/
 @define-color text_bg 		#fafafa;
 @define-color text_fg 		#202020;
-@define-color text_dis 		#788a87; 
+@define-color text_dis 		#9a9a9a; 
 @define-color text_link		#1D72E9;
 /*--------- selection & progress bar ----*/
-@define-color sel_lit 		#fbb954;
-@define-color sel_bg 		#cd683d;
-@define-color sel_shade		#993d41;
+@define-color sel_lit 		#ea92ab;
+@define-color sel_bg 		#af7fc2;
+@define-color sel_shade		#8c76be;
 @define-color sel_fg	 	#ffffff;
 /*--------- tooltips --------------------*/
 @define-color ttip_bg		#FFFFBF;
 @define-color ttip_fg		#000000;
-
-/* OS96 MODULE */
-/* this file contains entire theme palette. Fill free to change everything */

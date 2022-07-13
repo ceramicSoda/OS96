@@ -13,8 +13,7 @@
 @define-color main_bg 		#cacaca;
 /*--------- bevel shadow and light ------*/
 @define-color main_lit		#efefef;
-/*@define-color main_shade	#9292b2; */
-@define-color main_shade	#9292a2;
+@define-color main_shade	#9292b2;
 @define-color main_shade2	#b8b8b8;
 /*--------- text fields, menus, etc. ----*/
 @define-color text_bg 		#fafafa;

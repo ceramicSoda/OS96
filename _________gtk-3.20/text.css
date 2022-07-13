@@ -1,0 +1,24 @@
+textview{
+	background-color: @text_bg;	
+	padding: 4px 2px;
+	/*border-radius: 2px; 
+	/*box-shadow: inset 2px 2px 0 @main_shade,
+  				inset -1px -1px 0 @main_lit; */
+  	border: none; 
+	color: @text_fg;	
+} 
+list{
+	border: 1px solid @main_outline;
+	background-color: @text_bg;
+	color: @text_fg;
+}
+list row{
+	border-radius: 3px;
+	padding: 4px;
+	border: none;
+	margin: 4px;
+}
+list row:selected, list row:selected:hover, list row:selected:focus {
+	background-color: @sel_lit;
+	text-shadow: 1px 1px 0 @sel_bg;
+}

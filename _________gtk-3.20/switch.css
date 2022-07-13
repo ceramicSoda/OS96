@@ -1,0 +1,36 @@
+switch{
+	background-color: @main_bg;
+	border-radius: 3px;
+	border: 1px solid @main_outline;
+	box-shadow: -1px -1px 0 @main_shade,
+				inset 2px 2px 0 @main_shade,
+  				1px 1px 0 @main_lit;
+  	color: @text_fg;
+}
+switch slider{
+	background: none;
+	background-color: @main_bg;
+	border-radius: 3px;
+	color: @main_fg;
+	border: 1px solid @main_outline;
+	box-shadow: inset -2px -2px 0 @main_shade,
+				inset 1px 1px 0 @main_lit;
+}
+switch:checked slider{
+	transition: 100ms ease-in-out;
+	background-color: @sel_bg;	
+	box-shadow: inset -2px -2px 0 @sel_shade,
+				inset 1px 1px 0 @sel_lit;
+}
+switch:disabled{
+	color: @text_dis;
+	box-shadow: -1px -1px 0 @main_shade2,
+				inset 2px 2px 0 @main_shade2,
+  				1px 1px 0 @main_lit;
+}
+switch:disabled slider{
+	color: @text_dis;
+	border-color: @text_dis;
+	background-color: @main_bg;	
+	box-shadow: inset -2px -2px 0 @main_shade2;
+}

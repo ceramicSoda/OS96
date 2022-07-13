@@ -1,0 +1,171 @@
+notebook>stack{
+  background-color: @main_bg;
+}
+notebook>header>tabs>tab{
+  background-color: @main_bg;
+  padding: 8px;
+  border-top: 2px solid @main_lit;
+}
+notebook>header>tabs>tab:checked{
+  background-color: @main_shade2;
+  padding: 8px;
+  border-top: 2px solid @main_lit;
+}
+
+/* notebook>stack{
+	background-color: @main_bg;
+	border-radius: 3px;
+	border-top: 1px solid @main_lit;
+	border-left: 1px solid @main_lit;
+	border-right: 2px solid @main_shade;
+	border-bottom: 2px solid @main_shade;
+}
+notebook>header>tabs>tab{
+	background-color: @main_bg;
+	padding:6px;
+	border-radius: 3px;
+	border-top: 1px solid @main_lit;
+	border-left: 1px solid @main_lit;
+	border-right: 2px solid @main_shade;
+	border-bottom: 2px solid @main_shade;
+}
+notebook>header.top>tabs>tab{
+	margin-bottom: -1px;
+	
+}
+notebook>header.top>tabs>tab:checked{
+	border-bottom: 2px transparent;
+	border-radius: 3px 3px 0 0;
+} 
+
+
+
+
+
+notebook>stack{
+	background-color: @main_Bg;
+	border-radius: 3px;
+	box-shadow: inset -2px -2px @main_shade, inset 1px 1px @main_lit;
+}
+notebook>header>tabs>tab{
+	background-color: @main_bg;
+	padding:6px;
+	box-shadow: inset 1px 1px @main_shade, inset -2px -2px @main_lit;
+}
+notebook>header.top>tabs>tab:checked{
+	border-radius: 3px 3px 0 0;
+	box-shadow: inset -2px -2px @main_shade, inset 1px 1px @main_lit;
+} 
+
+
+/*
+notebook tab label, notebook .prelight-page, notebook .prelight-page label, notebook .active-page, notebook .active-page label {transition: all 200ms ease-in; }
+
+notebook {
+  padding: 0; }
+  notebook.frame {
+    margin: -1px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000000; }
+    notebook.frame > header {
+      margin: -1px; }
+      notebook.frame > header.top {
+        margin-bottom: 0; }
+      notebook.frame > header.bottom {
+        margin-top: 0; }
+      notebook.frame > header.left {
+        margin-right: 0; }
+      notebook.frame > header.right {
+        margin-left: 0; }
+      notebook.frame > header.top, notebook.frame > header.bottom {
+        padding-left: 0;
+        padding-right: 0; }
+      notebook.frame > header.left, notebook.frame > header.right {
+        padding-top: 0;
+        padding-bottom: 0; }
+  notebook > stack:not(:only-child) {
+    background-color: #C0C0C0;
+    box-shadow: inset -2px 0 #7d7d7d, inset 0 -2px #7d7d7d, inset 2px 0 white, inset 0 2px white; }
+    .nautilus-window notebook > stack:not(:only-child) {
+      box-shadow: none;
+      background-color: #FFFFFF; }
+  notebook tab {
+    padding: 6px 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0;
+    border-color: transparent;
+    color: rgba(0, 0, 0, 0.7);
+    background-color: #C0C0C0;
+    outline-width: 0; }
+    notebook tab:checked {
+      color: #000000;
+      border-color: #000000;
+      background-color: #C0C0C0; }
+  notebook > header {
+    background-color: #C0C0C0; }
+    notebook > header.top {
+      box-shadow: 0 1px #000000; }
+      notebook > header.top > tabs > tab {
+        border-width: 8px 5px 0 5px;
+        border-image: url("assets/tab-top.png");
+        border-image-slice: 8 5 0 5; }
+        notebook > header.top > tabs > tab:checked {
+          margin-bottom: -2px;
+          border-image: url("assets/tab-top-active.png");
+          border-image-slice: 8 5 0 5; }
+    notebook > header.bottom {
+      box-shadow: 0 -1px #000000; }
+      notebook > header.bottom > tabs > tab {
+        border-width: 0 5px 5px 5px;
+        border-image: url("assets/tab-bottom.png");
+        border-image-slice: 0 5 5 5; }
+        notebook > header.bottom > tabs > tab:checked {
+          margin-top: -2px;
+          border-image: url("assets/tab-bottom-active.png");
+          border-image-slice: 0 5 5 5; }
+    notebook > header.right {
+      box-shadow: -1px 0 #000000; }
+      notebook > header.right > tabs > tab {
+        border-width: 6px 7px 7px 0;
+        border-image: url("assets/tab-right.png");
+        border-image-slice: 6 7 7 0; }
+        notebook > header.right > tabs > tab:checked {
+          margin-left: -2px;
+          border-image: url("assets/tab-right-active.png");
+          border-image-slice: 6 7 7 0; }
+    notebook > header.left {
+      box-shadow: 1px 0 #000000; }
+      notebook > header.left > tabs > tab {
+        border-width: 6px 0 7px 7px;
+        border-image: url("assets/tab-left.png");
+        border-image-slice: 6 0 7 7; }
+        notebook > header.left > tabs > tab:checked {
+          margin-right: -2px;
+          border-image: url("assets/tab-left-active.png");
+          border-image-slice: 6 0 7 7; }
+  notebook > header.top > tabs > arrow.up, notebook > header.bottom > tabs > arrow.up {
+    -gtk-icon-source: -gtk-icontheme("pan-end-symbolic"); }
+    notebook > header.top > tabs > arrow.up:last-child, notebook > header.bottom > tabs > arrow.up:last-child {
+      margin-left: 2px; }
+  notebook > header.top > tabs > arrow.down, notebook > header.bottom > tabs > arrow.down {
+    -gtk-icon-source: -gtk-icontheme("pan-start-symbolic"); }
+    notebook > header.top > tabs > arrow.down:first-child, notebook > header.bottom > tabs > arrow.down:first-child {
+      margin-right: 2px; }
+  notebook > header.left > tabs > arrow.up, notebook > header.right > tabs > arrow.up {
+    -gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); }
+    notebook > header.left > tabs > arrow.up:last-child, notebook > header.right > tabs > arrow.up:last-child {
+      margin-top: 2px; }
+  notebook > header.left > tabs > arrow.down, notebook > header.right > tabs > arrow.down {
+    -gtk-icon-source: -gtk-icontheme("pan-up-symbolic"); }
+    notebook > header.left > tabs > arrow.down:first-child, notebook > header.right > tabs > arrow.down:first-child {
+      margin-bottom: 2px; }
+  notebook > header > tabs > arrow {
+    color: #000000; }
+    notebook > header > tabs > arrow:hover {
+      color: black; }
+    notebook > header > tabs > arrow:active {
+      color: black; }
+    notebook > header > tabs > arrow:disabled {
+      color: #737373; } */

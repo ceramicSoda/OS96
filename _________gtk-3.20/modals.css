@@ -1,0 +1,9 @@
+dialog{
+	border: 1px solid @main_outline;
+	background-color: @main_bg;
+}
+.sidebar-icon{
+	padding: 4px 8px;
+}
+.sidebar-row.activatable:hover{background-color: @main_shade2;}
+.sidebar-row.activatable:hover:selected{background-color: @sel_bg;}

@@ -1,0 +1,94 @@
+scale>contents{
+	border-radius: 8px;
+	border: 1px solid @main_shade2;
+	/*background-color: @main_bg; */
+	min-height: 6px;
+	min-width: 6px;
+	padding: 2px;
+	margin: 2px;
+}
+scale>value{
+	border-radius: 8px;
+	border: 1px solid @main_shade2;
+	background-color: @main_bg;
+	color: @main_fg;
+	padding: 2px 6px 2px 0;
+}
+scale>contents>trough{
+	background-color: @main_bg;
+	min-height: 2px;
+	min-width: 2px;
+	padding: 2px;
+	border-radius: 4px;
+	box-shadow: -1px -1px 0 @main_shade,
+				inset 2px 2px 0 @main_shade,
+  				1px 1px 0 @main_lit;
+  	border: 1px solid @main_outline;
+  	margin: 2px;
+}
+scale>contents>trough>slider{
+	padding: 4px;
+	margin: -8px -6px;
+	border-radius: 2px;
+	background-size: 2px 2px;
+  	background-image: repeating-linear-gradient(45deg, @main_shade 0, @main_shade 1px, @main_bg 0, @main_bg 50%);
+	box-shadow: inset -2px -2px 0 @main_bg,
+				inset 2px 2px 0 @main_bg,
+				inset -1px -1px 0 @main_shade,
+				inset 1px 1px 0 @main_lit;
+  	border: 1px solid @main_outline;
+}
+scale:disabled trough{
+	box-shadow: -1px -1px 0 @main_shade2,
+				inset 2px 2px 0 @main_shade2,
+  				1px 1px 0 @main_lit;
+}
+scale:disabled>contents>trough>slider{
+	background-size: 2px 2px;
+  	background-image: repeating-linear-gradient(45deg, @main_shade 0, @main_shade 1px, @main_bg 0, @main_bg 50%);
+	box-shadow: inset -2px -2px 0 @main_bg,
+				inset 2px 2px 0 @main_bg,
+				inset -1px -1px 0 @main_shade2;
+	border: 1px solid main_outline;
+}
+scale.marks-after>contents>trough>slider{
+	background-color: @main_bg;
+	box-shadow: inset -2px -2px 0 @main_bg,
+				inset 2px 2px 0 @main_bg,
+				inset -1px -1px 0 @main_shade,
+				inset 1px 1px 0 @main_lit;
+	margin: -8px -6px -10px -6px;
+	border-radius: 2px 2px 32px 32px;
+}
+scale.vertical.marks-after>contents>trough>slider{
+	box-shadow: inset -2px -2px 0 @main_bg,
+				inset 2px 2px 0 @main_bg,
+				inset -1px -1px 0 @main_shade,
+				inset 1px 1px 0 @main_lit;
+	margin: -6px -8px -6px -10px;
+	border-radius: 2px 32px 32px 2px;
+}
+scale:disabled>contents>trough>highlight{
+	background-color: @main_shade2;
+	box-shadow: 1px 1px 0 @main_shade2; 
+}
+scale.vertical>contents>trough>slider{
+	margin: -6px -8px;
+}
+scale.horizontal>contents>trough>slider{
+	margin: -8px -6px;
+}
+scale>marks{
+	padding: 0 0 2px 0;
+}
+scale.horizontal>marks{min-height: 4px;}
+scale.vertical>marks{min-width: 4px;}
+scale>marks>mark{
+	background-color: @text_fg;
+	min-width: 1px;
+	min-height: 1px;
+}
+scale>contents>trough>highlight, scale>contents>trough>highlight{
+	background-color: @sel_bg;
+	box-shadow: 1px 1px 0 @sel_shade; 
+}

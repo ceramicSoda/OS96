@@ -1,0 +1,72 @@
+frame label{
+	color: @main_fg;
+}
+frame border{
+	border-radius: 3px;
+	color: @main_outline;
+	border: 1px solid @main_outline;
+	background-color: @main_bg;
+}
+frame.border-inset border{
+	border: none;
+	border-top: 1px solid @main_shade;
+	border-left: 1px solid @main_shade;
+	border-right: 1px solid @main_lit;
+	border-bottom: 1px solid @main_lit;
+}
+frame.border-outset border{
+	border: none;
+	border-top: 1px solid @main_lit;
+	border-left: 1px solid @main_lit;
+	border-right: 1px solid @main_shade;
+	border-bottom: 1px solid @main_shade;
+}
+frame.border-groove border{
+	color: @main_shade;
+	border-top: 1px solid @main_shade;
+	border-left: 1px solid @main_shade;
+}
+frame.border-ridge border{
+	color: @main_shade;
+	border-bottom: 1px solid @main_shade;
+	border-right: 1px solid @main_shade;
+}
+revealer{
+	background-color: @main_bg;
+	border: 1px solid @main_outline;
+}
+revealer>border{
+	
+}
+frame.app-notification{
+	border: none;
+	margin: 6px;
+}
+scrolledwindow.frame{
+	border-radius: 3px;
+	background-color: @overall_bg; 
+	color: @text_fg;
+	text-shadow: 1px 1px @text_bg;
+}
+paned>label{
+	background-color: @text_bg;
+	color: @text_fg;
+}
+calendar{
+	padding: 2px;
+	background-color: @text_bg;
+	color:  @text_fg;
+	border-radius: 2px; 
+  	border: 1px solid @main_outline; 
+}
+calendar.header{
+	padding: 0;
+	box-shadow: inset -1px -1px 0 @sel_shade,
+				inset 1px 1px 0 @sel_lit;
+	background-color: @sel_bg;
+	color: @text_fg;
+}
+calendar.button{background: none; color: @text_fg;}
+calendar.button:hover{color: @sel_shade;}
+calendar:selected{background-color: @sel_lit;}
+calendar.highlight{background-color: @sel_lit;}

@@ -1,0 +1,15 @@
+headerbar{
+	padding: 2px;
+	background-color: @sel_bg;
+	color: @sel_fg;
+	border-bottom: 2px solid @sel_shade; 
+	border-top: 2px solid @sel_lit;
+}
+headerbar separator.vertical{
+	border-right: 1px solid @sel_shade;
+	border-left: 1px solid @sel_lit;
+}
+headerbar separator.horizontal{
+	border-bottom: 1px solid @sel_shade;
+	border-top: 1px solid @sel_lit;
+}
